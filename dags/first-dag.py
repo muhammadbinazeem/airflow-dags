@@ -11,7 +11,7 @@ default_args = {
 dag = DAG(
     'hello_world',
     default_args = default_args,
-    schedule=timedelta(1)
+    schedule=timedelta(days=1)
 )
 
 t1 = BashOperator(
