@@ -4,12 +4,12 @@ from datetime import datetime, timedelta
 
 default_args = {
     'owner': 'azeem',
-    'start_date': datetime(2024, 1, 25),
+    'start_date': datetime(2024, 10, 13),
     'catchup': False
 }
 
 dag = DAG(
-    'hello_world',
+    dag_id='hello_world',
     default_args = default_args,
     schedule=timedelta(days=1)
 )
