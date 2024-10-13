@@ -10,7 +10,7 @@ def get_data(**kwargs):
     responce = requests.get(url)
 
     if responce.status_code == 200:
-        df = pd.read_csv(url, header=None, name=['Category', 'Price', 'Quality'])
+        df = pd.read_csv(url, header=None, names=['Category', 'Price', 'Quality'])
 
         print('shape of data frame : ', df.shape)
 
